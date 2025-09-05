@@ -1,42 +1,32 @@
-Simulador de Carrinho de Compras
+# Simulador de Carrinho de Compras  
 
-Projeto da disciplina Design Patterns & Clean Code.
-##Implementação em PHP puro, aplicando PSR-12, KISS e DRY, para simular um carrinho de compras básico de e-commerce.
+Projeto da disciplina **Design Patterns & Clean Code**.  
+Implementação em **PHP puro**, aplicando **PSR-12, KISS e DRY**, para simular um carrinho de compras básico de e-commerce.  
 
-Alunos:
-Poliana Gomes Rodriguez - 200044
-Eder Luiz - 1971959
+---
 
-Como rodar o projeto
+## Alunos  
+- Poliana Rodriguez - 2000444  
+- Eder Luiz - 1971959 
+
+---
+
+## Como rodar o projeto  
 
 Clone este repositório ou baixe os arquivos.
 git clone https://github.com/Luiz-Eder/Cart.git
 
 Copie a pasta para o diretório htdocs do XAMPP:
-C:\xampp\htdocs
+C:\xampp\htdocs\carrinho
 
 Inicie o servidor Apache pelo XAMPP.
 
 Acesse no navegador:
-http://localhost/Cart-Main/
+http://localhost/carrinho/public/index.php
 
-Estrutura do Projeto
+---
 
-carrinho/
-
-public/
-
-index.php
-
-src/
-
-CartManager.php
-
-docs/
-
-README.md
-
-Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 Adicionar item ao carrinho
 
@@ -47,6 +37,8 @@ Listar itens do carrinho
 Calcular total
 
 Aplicar desconto com cupom DESCONTO10
+
+---
 
 Exemplos de Uso (Casos de Teste)
 
@@ -73,7 +65,9 @@ Subtotal: R$ XXX,XX
 Desconto: R$ XX,XX
 Total Final: R$ XXX,XX
 
-Regras de Negócio
+---
+
+## Regras de Negócio
 
 O estoque é atualizado automaticamente ao adicionar ou remover produtos.
 
@@ -83,8 +77,8 @@ Não é permitido adicionar quantidade menor ou igual a zero.
 
 Mensagens de erro informam quando não há estoque suficiente ou quando o produto não existe.
 
-Limitações
 
+## Limitações
 Não há persistência de dados (uso apenas de arrays em memória).
 
 Não há sistema de login/usuário.
