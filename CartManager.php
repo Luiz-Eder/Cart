@@ -1,6 +1,5 @@
 <?php
 
-// src/CartManager.php
 
 class CartManager
 {
@@ -9,16 +8,15 @@ class CartManager
 
     public function __construct()
     {
-        // Define a lista de produtos no construtor
         $this->products = [
             ['id' => 1, 'nome' => 'Camiseta', 'preco' => 59.90, 'estoque' => 10],
             ['id' => 2, 'nome' => 'Calça Jeans', 'preco' => 129.90, 'estoque' => 5],
             ['id' => 3, 'nome' => 'Tênis', 'preco' => 199.90, 'estoque' => 3],
-            ['id' => 4, 'nome' => 'Relógio Digital', 'preco' => 89.90, 'estoque' => 15],
+            ['id' => 4, 'nome' => 'Boné', 'preco' => 89.90, 'estoque' => 15],
         ];
     }
     
-    // Método auxiliar para buscar um produto
+    // buscar um produto
     private function getProductById(int $id): ?array
     {
         foreach ($this->products as $product) {
@@ -29,7 +27,7 @@ class CartManager
         return null;
     }
 
-    // Método auxiliar para atualizar o estoque
+    // atualizar o estoque
     private function updateProductStock(int $id, int $quantity)
     {
         foreach ($this->products as &$product) {
