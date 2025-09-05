@@ -1,13 +1,13 @@
-#Simulador de Carrinho de Compras
+Simulador de Carrinho de Compras
 
-#Projeto da disciplina Design Patterns & Clean Code.
+Projeto da disciplina Design Patterns & Clean Code.
 ##Implementação em PHP puro, aplicando PSR-12, KISS e DRY, para simular um carrinho de compras básico de e-commerce.
 
-#Alunos:
+Alunos:
 Poliana Gomes Rodriguez - 200044
 Eder Luiz - 1971959
 
-##Como rodar o projeto
+Como rodar o projeto
 
 Clone este repositório ou baixe os arquivos.
 git clone https://github.com/Luiz-Eder/Cart.git
