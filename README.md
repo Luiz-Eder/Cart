@@ -18,7 +18,7 @@ C:\xampp\htdocs\carrinho
 Inicie o servidor Apache pelo XAMPP.
 
 Acesse no navegador:
-http://localhost/carrinho/public/index.php
+http://localhost/Cart-Main/
 
 Estrutura do Projeto
 
