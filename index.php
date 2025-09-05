@@ -1,11 +1,9 @@
 <?php
 
-// public/index.php
+require_once 'CartManager.php';
 
-define('SRC_PATH', __DIR__ . '/../src/');
-require_once SRC_PATH . 'CartManager.php';
 
-// Instancia o CartManager
+// CartManager
 $cartManager = new CartManager();
 
 echo "<h1>Simulador de Carrinho de Compras</h1>";
@@ -43,24 +41,23 @@ function listProductStock(CartManager $cartManager)
     echo "</ul>";
 }
 
-// Casos de Uso
 echo "<h2>Casos de Teste:</h2>";
 
-// Caso 1 - Adicionar um produto válido
+// Adicionar um produto 
 echo "<h3>Caso 1 — Adicionando 2 Camisetas (id=1)</h3>";
 $message = $cartManager->addItem(1, 2);
 echo "<p>Resultado: " . htmlspecialchars($message) . "</p>";
 listCartItems($cartManager);
 echo "<hr>";
 
-// Caso 2 - Tentar adicionar além do estoque
+// Tentar adicionar além do estoque
 echo "<h3>Caso 2 — Tentando adicionar 10 Tênis (id=3)</h3>";
 $message = $cartManager->addItem(3, 10);
 echo "<p>Resultado: " . htmlspecialchars($message) . "</p>";
 listCartItems($cartManager);
 echo "<hr>";
 
-// Caso 3 - Remover produto do carrinho
+// Remover produto do carrinho
 echo "<h3>Caso 3 — Removendo Calça Jeans (id=2)</h3>";
 $cartManager->addItem(2, 1);
 listCartItems($cartManager);
@@ -69,7 +66,7 @@ echo "<p>Resultado: " . htmlspecialchars($message) . "</p>";
 listCartItems($cartManager);
 echo "<hr>";
 
-// Caso 4 - Aplicação de cupom de desconto
+// Aplicação de desconto
 echo "<h3>Caso 4 — Aplicando cupom de desconto 'DESCONTO10'</h3>";
 $cartManager->addItem(1, 1);
 $cartManager->addItem(4, 3);
@@ -87,3 +84,5 @@ echo "<h3>Estado Final do Carrinho:</h3>";
 listCartItems($cartManager);
 
 listProductStock($cartManager);
+
+?>
