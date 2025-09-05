@@ -17,12 +17,12 @@ Clone este repositório ou baixe os arquivos.
 git clone https://github.com/Luiz-Eder/Cart.git
 
 Copie a pasta para o diretório htdocs do XAMPP:
-C:\xampp\htdocs\carrinho
+C:\xampp\htdocs
 
 Inicie o servidor Apache pelo XAMPP.
 
 Acesse no navegador:
-http://localhost/carrinho/public/index.php
+http://localhost/Cart-Main/
 
 ---
 
